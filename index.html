@@ -1,0 +1,76 @@
+# painel-roblox
+interface do meu projeto 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phantom Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="panel">
+    <header class="header">
+      <div>
+        <span class="tag">ROBLOX • TRAINING</span>
+        <h1>PHANTOM<span> UI</span></h1>
+        <p>Painel de treinamento</p>
+      </div>
+      <button id="close" class="close">×</button>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-page="home">Principal</button>
+      <button class="tab" data-page="aim">Treinamento</button>
+      <button class="tab" data-page="settings">Ajustes</button>
+    </nav>
+
+    <section class="page" id="home">
+      <div class="status">
+        <span class="dot"></span>
+        INTERFACE INICIADA
+      </div>
+      <h2>Bem-vindo</h2>
+      <p>Configure seu ambiente de treino.</p>
+      <button class="action" id="start">Iniciar sessão</button>
+      <p id="message" class="message">Aguardando início...</p>
+    </section>
+
+    <section class="page hidden" id="aim">
+      <h2>Treinamento de mira</h2>
+      <p>Configurações para uma área de prática própria.</p>
+
+      <label for="sensitivity">Sensibilidade</label>
+      <input id="sensitivity" type="range"
+        min="1" max="100" value="50">
+      <p>Valor: <span id="sensValue">50</span></p>
+
+      <label for="duration">Duração da sessão</label>
+      <select id="duration">
+        <option value="30">30 segundos</option>
+        <option value="60">1 minuto</option>
+        <option value="120">2 minutos</option>
+      </select>
+
+      <button class="action" id="save">Salvar configurações</button>
+      <p id="aimMessage" class="message"></p>
+    </section>
+
+    <section class="page hidden" id="settings">
+      <h2>Ajustes</h2>
+      <label class="toggle">
+        <input type="checkbox" id="animations" checked>
+        Animações da interface
+      </label>
+      <button class="action" id="reset">Restaurar padrões</button>
+      <p class="message">Phantom UI • versão 1.0</p>
+    </section>
+
+    <footer>PROJETO INDEPENDENTE • V1.0</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
