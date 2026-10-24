@@ -1,0 +1,152 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  background: #08070d;
+  color: #f4f0ff;
+  font-family: Arial, sans-serif;
+}
+
+.panel {
+  width: 100%;
+  max-width: 430px;
+  padding: 22px;
+  border: 1px solid #38234f;
+  border-radius: 20px;
+  background: #111019;
+  box-shadow: 0 0 40px #8b5cf622;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tag, footer {
+  color: #a78bfa;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 10px 0 5px;
+  letter-spacing: 3px;
+}
+
+h1 span {
+  color: #a78bfa;
+}
+
+p {
+  color: #aaa5b8;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.close {
+  background: #211a2d;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  font-size: 23px;
+}
+
+.tabs {
+  display: flex;
+  gap: 7px;
+  margin: 25px 0;
+}
+
+.tab {
+  flex: 1;
+  padding: 11px 5px;
+  border: 1px solid #30283c;
+  border-radius: 9px;
+  color: #c7bfd6;
+  background: #191621;
+}
+
+.tab.active {
+  color: white;
+  background: #6d28d9;
+  border-color: #a78bfa;
+}
+
+.status {
+  padding: 12px;
+  border-radius: 9px;
+  background: #1a1823;
+  color: #c4b5fd;
+  font-size: 11px;
+}
+
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: #a78bfa;
+}
+
+h2 {
+  font-size: 19px;
+  margin-top: 24px;
+}
+
+.action {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+label {
+  display: block;
+  margin: 17px 0 8px;
+  font-size: 13px;
+}
+
+input[type="range"], select {
+  width: 100%;
+}
+
+select {
+  padding: 11px;
+  border-radius: 8px;
+  color: white;
+  background: #201b2b;
+  border: 1px solid #423450;
+}
+
+.toggle input {
+  accent-color: #8b5cf6;
+}
+
+.message {
+  min-height: 20px;
+  color: #c4b5fd;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 9px;
+}
+  
